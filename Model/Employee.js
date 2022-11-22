@@ -5,10 +5,10 @@ class Employee{
         this.email = email
     }
 
-    getName(){return this.name}
-    getID(){return this.id}
-    getEmail(){return this.email}
-    getStatus(){return "Employee"}
+    getName()       {return this.name}
+    getID()         {return this.id}
+    getEmail()      {return this.email}
+    getPosition()   {return "Employee"}
 
 }
 
