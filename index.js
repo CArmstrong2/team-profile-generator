@@ -10,6 +10,35 @@ const team = []
 
 const start = () =>{
 
+    const addEmployee = () => {
+        inquirer
+        .prompt([
+            {
+                type:'list',
+                name:'type',
+                message:'Select a team member to add:',
+                choices:[
+                    'Manager',
+                    'Engineer',
+                    'Intern',
+                    '-Cancel-'
+                ]
+            }
+        ])
+        .then((userInput) => {
+            selection = userInput.type
+            if(selection === 'Manager'){
+                addManager()
+            } else if(selection === 'Engineer'){
+                addEngineer()
+            } else if(selection === 'Intern'){
+                addIntern()
+            } else {
+                return //write team to file?
+            }
+        })
+    }
+
     const addManager = () => {
         inquirer
         .prompt([
@@ -114,5 +143,6 @@ const start = () =>{
         team.push(newIntern)
     })
     }
+
 }
 
