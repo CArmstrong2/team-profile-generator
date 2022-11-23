@@ -144,7 +144,9 @@ const start = () =>{
     })
     }
 
-    
+    outputTeam = () => {
+        //todo
+    }
 
     addEmployee
 
