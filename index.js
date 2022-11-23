@@ -28,11 +28,11 @@ const start = () =>{
         .then((userInput) => {
             selection = userInput.type
             if(selection === 'Manager'){
-                addManager()
+                addManager
             } else if(selection === 'Engineer'){
-                addEngineer()
+                addEngineer
             } else if(selection === 'Intern'){
-                addIntern()
+                addIntern
             } else {
                 return //write team to file?
             }
@@ -144,5 +144,10 @@ const start = () =>{
     })
     }
 
+    
+
+    addEmployee
+
 }
 
+start
